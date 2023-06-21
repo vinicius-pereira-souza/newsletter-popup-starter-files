@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  purge: {
+    enabled: true,
+    content: ["./src/**/*.html"],
+  },
   theme: {
     extend: {
       backgroundImage: {
@@ -26,7 +29,7 @@ module.exports = {
       maxWidth: {
         270: "270px",
         340: "340px",
-        314: "314px",
+        414: "414px",
       },
     },
   },
